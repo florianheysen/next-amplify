@@ -16,6 +16,7 @@ export const saveImage = mutation({
   },
 });
 
+// Change this mutation to an action that delete the file in S3
 export const unlinkImage = mutation({
   args: { taskId: v.id("tasks") },
   handler: async (ctx, { taskId }) => {
