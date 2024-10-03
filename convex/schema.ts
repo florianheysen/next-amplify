@@ -5,6 +5,6 @@ export default defineSchema({
   tasks: defineTable({
     isCompleted: v.boolean(),
     text: v.string(),
-    imageUrl: v.optional(v.string()),
+    fileUrl: v.optional(v.string()),
   }),
 });
